@@ -1,11 +1,13 @@
 package MainOperation;
 
+import com.sun.org.apache.xpath.internal.SourceTree;
+
 import java.util.Random;
+import java.util.TimeZone;
 
 public class Main {
     public static void main(String[] args) {
-//        method1();
-        method2();
+        method4();
     }
 
     public static void method(){
@@ -70,5 +72,35 @@ public class Main {
         else {
             System.out.println("а не меньше b");
         }
+    }
+
+    public static void method3(){
+        Random rnd = new Random();
+        int i = 0;
+        while (i < 100) {
+            int a = 5;
+            int b = rnd.nextInt(7) + 1;
+            int c = rnd.nextInt(7) + 1;
+
+//            if (a < b) System.out.println("а меньше b");
+//            else if (a == b) System.out.println("a == b");
+//            else if (a > b) System.out.println("a > b");
+
+            if (b < c) System.out.println("а меньше b");
+            else if (b == c) System.out.println("a равно b");
+            else if (b > c) System.out.println("a больше b");
+            else System.out.println("не один из вариантов не подходит");
+
+            i++;
+            System.out.println();
+        }
+    }
+
+    public static void method4(){
+        if (true){
+            System.out.println("какой-то текст");
+            System.out.println("какой-то текст");
+        }
+
     }
 }
