@@ -1,5 +1,9 @@
 package App;
 
+import sun.java2d.pipe.OutlineTextRenderer;
+
+import static java.lang.System.*;
+
 public class HelloWorld {
     public static void main(String[] args) {
         byte b = (byte) 216;
@@ -33,6 +37,8 @@ public class HelloWorld {
         System.out.println(b1 + "" + ' ' + "" + b2);
         System.out.println(str + str + b1);
 
+        out.println(b);
+        out.println(s);
 
     }
 }
